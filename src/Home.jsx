@@ -71,9 +71,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="m-3 text-xl font-semibold text-gray-900">
-        REACT SIDEBAR
-      </div>
+      <div className="m-3 text-xl font-semibold text-gray-900">Dashboard</div>
     </section>
   );
 };
