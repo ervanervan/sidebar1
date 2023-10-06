@@ -10,13 +10,18 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const menus = [
     { name: "Dashboard", link: "/", icon: MdOutlineDashboard },
-    { name: "User", link: "/", icon: AiOutlineUser },
-    { name: "Messages", link: "/", icon: FiMessageSquare },
-    { name: "Analytics", link: "/", icon: TbReportAnalytics, margin: true },
-    { name: "File Manager", link: "/", icon: FiFolder },
-    { name: "Card", link: "/", icon: FiShoppingCart },
-    { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
-    { name: "Setting", link: "/", icon: RiSettings4Line },
+    { name: "User", link: "/user", icon: AiOutlineUser },
+    { name: "Messages", link: "/messages", icon: FiMessageSquare },
+    {
+      name: "Analytics",
+      link: "/analytics",
+      icon: TbReportAnalytics,
+      margin: true,
+    },
+    { name: "File Manager", link: "/filemanager", icon: FiFolder },
+    { name: "Card", link: "/card", icon: FiShoppingCart },
+    { name: "Saved", link: "/saved", icon: AiOutlineHeart, margin: true },
+    { name: "Setting", link: "/setting", icon: RiSettings4Line },
     {
       name: "Logout",
       link: "/",
@@ -40,7 +45,7 @@ const Home = () => {
             onClick={() => setOpen(!open)}
           />
         </div>
-        <div className="relative mt-4 flex flex-col gap-2   ">
+        <div className="relative mt-4 flex flex-col gap-1">
           {menus?.map((menu, i) => (
             <Link
               to={menu?.link}
